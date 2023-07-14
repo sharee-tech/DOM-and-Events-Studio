@@ -5,10 +5,10 @@ window.addEventListener("load", function () {
   rocket.style.position = "relative";
   const flightStatus = document.getElementById("flightStatus");
   let takeoffBtn = document.getElementById("takeoff");
-  let response = window.confirm("Shuttle is ready for takeoff");
   const shuttleHeight = document.getElementById("spaceShuttleHeight");
 
   takeoffBtn.addEventListener("click", function (event) {
+    let response = window.confirm("Shuttle is ready for takeoff");
     if (response) {
       flightStatus.innerHTML = "Shuttle in flight";
       document.getElementById("shuttleBackground").style.backgroundColor =
